@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Notebook</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>GPT From Scratch - Srihari Unnikrishnan</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7535,7 +7535,24 @@ code {
 
 </head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+html { scroll-behavior: smooth; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; line-height: 1.6; color: #333; }
+.jp-Notebook { max-width: 1200px; margin: 0 auto; padding: 20px; }
+.jp-Cell { margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden; }
+.jp-MarkdownCell { background: #fafafa; padding: 20px; }
+.jp-CodeCell { background: #f8f9fa; }
+.highlight pre { background: #2d3748; color: #e2e8f0; padding: 15px; border-radius: 5px; overflow-x: auto; }
+.jp-OutputArea { background: #fff; border: 1px solid #e1e5e9; border-radius: 5px; }
+@media (max-width: 768px) { .jp-Notebook { padding: 10px; } .jp-Cell { margin-bottom: 15px; } }
+</style>
 <main>
+<div style="text-align: center; margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+    <a href="https://github.com/pythongiant/GPT-From-Scratch" style="display: inline-block; text-decoration: none; background: rgba(255,255,255,0.95); color: #24292e; padding: 12px 24px; border-radius: 30px; margin: 0 10px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 16px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 3px 8px rgba(0,0,0,0.15);"><i class="fas fa-star" style="color: #f6c23e; margin-right: 8px;"></i> Star this</a>
+    <a href="https://github.com/pythongiant/GPT-From-Scratch/fork" style="display: inline-block; text-decoration: none; background: rgba(255,255,255,0.95); color: #24292e; padding: 12px 24px; border-radius: 30px; margin: 0 10px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 16px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 3px 8px rgba(0,0,0,0.15);"><i class="fas fa-code-branch" style="color: #6f42c1; margin-right: 8px;"></i> Fork This</a>
+</div>
+<style>a:hover { transform: translateY(-3px); box-shadow: 0 6px 15px rgba(0,0,0,0.25) !important; }</style>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -9934,7 +9951,8 @@ Loaded weights-only checkpoint (optimizer/scaler reset)
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>Train 1:   0%|          | 0/1539 [00:00&lt;?, ?it/s]/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 3 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+<pre>
+Train 1:   0%|          | 0/1539 [00:00&lt;?, ?it/s]/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 3 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
   warnings.warn(
 /tmp/ipython-input-960699167.py:50: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
   with autocast():
