@@ -7689,7 +7689,7 @@ code {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Importantly, positional embeddings depend only on the token’s position within a sequence, not on which sequence in the batch it belongs to. Therefore, the same positional embedding for position t is shared across all sequences in a batch and is broadcast during computation. This ensures that positional information encodes relative and absolute order, rather than introducing spurious batch-specific signals.</p>
-<p>There are 2 types of positional embeddinngs</p>
+<p>There are 2 types of positional embeddings</p>
 <ul>
 <li><p>Fixed (sinusoidal), where positions are encoded using sine and cosine functions of different frequencies, enabling the model to generalize to longer sequences and infer relative distances between tokens.</p>
 </li>
